@@ -51,7 +51,7 @@ if st.button("Predict"):
         )
     else:
         advice = (
-            f"According to our model, the child is in a abnormal state. "
+            f"According to our model, the child is in an abnormal state. "
             f"The model predicts that the child has a {probability:.1f}% probability of being abnormal. "
             "It is strongly advised to seek immediate medical attention for further evaluation."
         )
