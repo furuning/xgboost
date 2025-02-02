@@ -17,13 +17,13 @@ feature_names = [
 st.title("Henoch-Schönlein purpura Predictor")
 
 # Input features
-PDW = st.number_input("Platelet Distribution Width (PDW):", min_value=14.70, max_value=18.0, value=15)
-MPV = st.number_input("Mean Platelet Volume (MPV):", min_value=6.50, max_value=14.40, value=10)
-MCV = st.number_input("Mean Corpuscular Volume (MCV):", min_value=57.40, max_value=103.60, value=80)
-EOS = st.number_input("Eosinophils Absolute Value (EOS):", min_value=0, max_value=1.80, value=0)
-PLT = st.number_input("Platelet Count (PLT):", min_value=3.0, max_value=820.0, value=300)
-MON = st.number_input("Monocytes Absolute Value (MON):", min_value=0.02, max_value=2.51, value=1.3)
-RDW = st.number_input("Red Cell Distribution Width-Standard Deviation (RDW):", min_value=11.0, max_value=22.20, value=15)
+PDW = st.number_input("Platelet Distribution Width (PDW):", min_value=14.70, max_value=18.0, value=15.00)
+MPV = st.number_input("Mean Platelet Volume (MPV):", min_value=6.50, max_value=14.40, value=10.00)
+MCV = st.number_input("Mean Corpuscular Volume (MCV):", min_value=57.40, max_value=103.60, value=80.00)
+EOS = st.number_input("Eosinophils Absolute Value (EOS):", min_value=0.00, max_value=1.80, value=0.15)
+PLT = st.number_input("Platelet Count (PLT):", min_value=3, max_value=820, value=300)
+MON = st.number_input("Monocytes Absolute Value (MON):", min_value=0.02, max_value=2.51, value=1.30)
+RDW = st.number_input("Red Cell Distribution Width-Standard Deviation (RDW):", min_value=11.00, max_value=22.20, value=15.00)
 
 # Collect input values into a list
 feature_values = [PDW,MPV,MCV,EOS,PLT,MON,RDW]
