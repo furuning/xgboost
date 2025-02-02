@@ -23,7 +23,7 @@ MCV = st.number_input("Mean Corpuscular Volume (MCV):", min_value=57.40, max_val
 EOS = st.number_input("Eosinophils Absolute Value (EOS):", min_value=0.00, max_value=1.80, value=0.15)
 PLT = st.number_input("Platelet Count (PLT):", min_value=3, max_value=820, value=300)
 MON = st.number_input("Monocytes Absolute Value (MON):", min_value=0.02, max_value=2.51, value=1.30)
-RDW = st.number_input("Red Cell Distribution Width-Standard Deviation (RDW):", min_value=11.00, max_value=22.20, value=15.00)
+RDW = st.number_input("Red Cell Distribution Width-Standard Deviation (RDW-SD):", min_value=11.00, max_value=22.20, value=15.00)
 
 # Collect input values into a list
 feature_values = [PDW,MPV,MCV,EOS,PLT,MON,RDW]
@@ -45,14 +45,14 @@ if st.button("Predict"):
 
     if predicted_class == 0:
         advice = (
-            f"According to our model, the children is in an normal. "
-            f"The model predicts that the children has a {probability:.1f}% probability of being normal. "
-            "It is recommended to continue monitoring the children's health regularly."
+            f"According to our model, the child is in an normal. "
+            f"The model predicts that the child has a {probability:.1f}% probability of being normal. "
+            "It is recommended to continue monitoring the child's health regularly."
         )
     else:
         advice = (
-            f"According to our model, the children is in a anomalous state. "
-            f"The model predicts that the children has a {probability:.1f}% probability of being anomalous. "
+            f"According to our model, the child is in a abnormal state. "
+            f"The model predicts that the child has a {probability:.1f}% probability of being abnormal. "
             "It is strongly advised to seek immediate medical attention for further evaluation."
         )
    
