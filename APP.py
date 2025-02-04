@@ -23,7 +23,7 @@ MCV = st.number_input("Mean Corpuscular Volume (MCV):", min_value=57.40, max_val
 EOS = st.number_input("Eosinophils Absolute Value (EOS):", min_value=0.00, max_value=1.80, value=0.15)
 PLT = st.number_input("Platelet Count (PLT):", min_value=3, max_value=820, value=300)
 MON = st.number_input("Monocytes Absolute Value (MON):", min_value=0.02, max_value=2.51, value=1.30)
-RDW = st.number_input("Red Cell Distribution Width-Standard Deviation (RDW-SD):", min_value=11.00, max_value=22.20, value=15.00)
+RDW = st.number_input("Red Cell Distribution Width-Coefficient of Variation (RDW-CV):", min_value=11.00, max_value=22.20, value=15.00)
 
 # Collect input values into a list
 feature_values = [PDW,MPV,MCV,EOS,PLT,MON,RDW]
